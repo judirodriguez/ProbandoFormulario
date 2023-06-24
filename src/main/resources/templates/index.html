@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website with a contact Form 01</title>
+    <link rel="stylesheet" href="/pruebaForm/src/main/resources/static/style.css">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body>
+<header>
+    <h1>Soy el header</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+
+
+    <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+            <h3>Contactanos</h3>
+            <p>Requerimiento de productos, informacion y comentarios</p>
+            <form action="">
+                <p>
+                    <label>Nombre</label>
+                    <input type="text" name="fullname" placeholder="Maria Perez">
+                </p>
+                <p>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="mperez@ejemplo.cl">
+                </p>
+                <p>
+                    <label>Telefono</label>
+                    <input type="tel" name="phone" placeholder="56912345678">
+                </p>
+                <p>
+                    <label>Asunto</label>
+                    <input type="text" name="affair">
+                </p>
+                <p class="block">
+                    <label>Mensaje</label>
+                    <textarea name="message" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <button>
+                        ENVIAR
+                    </button>
+                </p>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h4>Visitanos</h4>
+            <p>Estamos ubicados en Hernan Trizano 522, Cunco. ¡Te esperamos!</p>
+
+
+            <div class="mapouter">
+                <div class="gmap">
+                    <iframe width="500" height="315" id="gmap_canvas" src="https://maps.google.com/maps?q=Trizano+522%2C+cunco&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+            <p><br>Horario de atención: <br> Lunes a viernes de 09:30 a 19:00 <br> Sábado de 12:00 a 18:00
+            </p>
+            <h4>Siguenos</h4>
+            <p>Entérate de nuestros talleres, ferias y eventos. <br>Sé parte de nuestra comunidad.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
