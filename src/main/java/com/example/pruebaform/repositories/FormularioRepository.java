@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 @Repository
 public interface FormularioRepository extends JpaRepository<FormularioEntity, Long> {
-    // Puedes agregar métodos personalizados de consulta si los necesitas
+
 }

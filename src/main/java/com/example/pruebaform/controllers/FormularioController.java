@@ -24,7 +24,7 @@ public class FormularioController {
 
     @GetMapping("/crear")
     public String mostrarFormulario() {
-        return "formulario";
+        return "crear";
     }
 
     @PostMapping("/guardar")

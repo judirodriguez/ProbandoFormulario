@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Website with a contact Form 01</title>
-    <link rel="stylesheet" href="/pruebaForm/src/main/resources/static/style.css">
+    /*<link rel="stylesheet" href="\src\main\resources\static\style.css"> */
     <!-- GOOGLE FONTs -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <!-- FONT AWESOME -->
@@ -35,32 +35,23 @@
         <div class="contact-form">
             <h3>Contactanos</h3>
             <p>Requerimiento de productos, informacion y comentarios</p>
-            <form action="">
-                <p>
-                    <label>Nombre</label>
-                    <input type="text" name="fullname" placeholder="Maria Perez">
-                </p>
-                <p>
-                    <label>Email</label>
-                    <input type="email" name="email" placeholder="mperez@ejemplo.cl">
-                </p>
-                <p>
-                    <label>Telefono</label>
-                    <input type="tel" name="phone" placeholder="56912345678">
-                </p>
-                <p>
-                    <label>Asunto</label>
-                    <input type="text" name="affair">
-                </p>
-                <p class="block">
-                    <label>Mensaje</label>
-                    <textarea name="message" rows="3"></textarea>
-                </p>
-                <p class="block">
-                    <button>
-                        ENVIAR
-                    </button>
-                </p>
+            <form action="/formulario/guardar" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" required><br><br>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required><br><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+
+                <input type="submit" value="Guardar">
             </form>
         </div>
         <div class="contact-info">
